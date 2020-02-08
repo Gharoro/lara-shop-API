@@ -29,7 +29,7 @@ class AuthController extends Controller
                 'email' => 'required|email',
                 'password' => 'required',
                 'c_password' => 'required|same:password',
-                'role' => 'required',
+                'role' => 'required|in:admin,customer',
                 'state' => 'required',
                 'city' => 'required',
                 'address' => 'required',
